@@ -13,9 +13,9 @@ namespace WebApplication_Practice.Controllers
 		/// Customer首頁
 		/// </summary>
 		/// <returns></returns>
-		public ActionResult Customer()
+		public ActionResult Index()
 		{
-			return View();
+			return View("Customer");
 		}
 
 		/// <summary>
