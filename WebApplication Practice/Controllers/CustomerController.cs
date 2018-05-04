@@ -47,5 +47,23 @@ namespace WebApplication_Practice.Controllers
 			};
 			return PartialView("_Grid" , list);
 		}
+
+		public ActionResult Detail()
+		{
+			var moodel = new CustomerViewModel()
+			{
+				Address = "第一線是" ,
+				CompanyName = "第一家銀行" ,
+				City = "新北市" ,
+				ContactName = "王大明" ,
+				ContactTitle = "Vice President" ,
+				Country = "中東" ,
+				CustomerID = "None" ,
+				Fax = "+55 123456789" ,
+				Phone = "+65 123456789" ,
+				PostalCode = "545"
+			};
+			return View();
+		}
 	}
 }
