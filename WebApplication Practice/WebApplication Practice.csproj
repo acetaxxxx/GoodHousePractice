@@ -321,7 +321,7 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Customer\_Grid.cshtml" />
-    <Content Include="Views\Customer\View.cshtml" />
+    <Content Include="Views\Customer\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\Customer\Customers.ts" />

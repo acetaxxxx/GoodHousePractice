@@ -1,19 +1,38 @@
 ﻿@{
     ViewBag.Title = "Customer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
 <h2>Customer</h2>
-
-<div class="container ">
-
-    <form class="" method="post">
-        <div class=" form-group">
-            <label class="  col-md-2 text-right" for="txtName">客戶姓名:</label>
-            <input class="form-control  col-md-4 " type="text" id="txtName" name="txtName" alt="查詢姓名" maxlength="10" />
-        </div>
-        <div class=" form-group">
-            <label class=" col-md-2 text-right " for="txtCompanyName">公司名稱:</label>
-            <input class="form-control col-md-4 " id="txtCompanyName" name="txtCompayName" type="text" placeholder="請輸入公司名稱" />
-        </div>
-    </form>
+<div class="card ">
+    <div class="card-body">
+        <form class="" method="post">
+            <div class="form-row  ">
+                <div class="form-group col-6">
+                    <label class="  col-form-label" for="txtName">聯絡人姓名:</label>
+                    <input class="form-control" type="text" id="txtName" name="txtName" alt="查詢姓名" maxlength="10" />
+                </div>
+                <div class="form-group col-6">
+                    <label class=" col-form-label" for="txtCompanyName">公司名稱:</label>
+                    <input class="form-control" id="txtCompanyName" name="txtCompayName" type="text" placeholder="請輸入公司名稱" />
+                </div>
+            </div>
+            <div class="form-row ">
+                <div class="form-group col-6">
+                    <lable class=" text-right" for="txtTitle">職稱:</lable>
+                    <input class="form-control " id="txtTitle" name="txtTitle" />
+                </div>
+                <div class="form-group col-6">
+                    <lable class="text-right" for="txtCity">城市:</lable>
+                    <input class="form-control" id="txtCity" name="txtCity" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="order-last float-right">
+                    <button type="button" id="btnQuery" class="btn  btn-info">查詢</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </div>
+
+<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true"> </div>
