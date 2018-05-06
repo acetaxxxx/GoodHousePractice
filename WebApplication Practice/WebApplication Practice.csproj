@@ -250,6 +250,8 @@
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Common.js" />
+    <Content Include="Scripts\Customer\Customer.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -324,7 +326,7 @@
     <Content Include="Views\Customer\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\Customer\Customers.ts" />
+    <TypeScriptCompile Include="Scripts\Common.ts" />
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>

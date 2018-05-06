@@ -2,6 +2,7 @@
     ViewBag.Title = "Customer";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <h2>Customer</h2>
 <div class="card ">
     <div class="card-body">
@@ -29,10 +30,15 @@
             <div class="row">
                 <div class="order-last float-right">
                     <button type="button" id="btnQuery" class="btn  btn-info">查詢</button>
+                    <button type="button" id="btnAdd" class="btn btn-info" data-toggle="modal">新增</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
-
-<div class="modal fade" id="detailModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true"> </div>
+<div class="card" id="divGrid"></div>
+<div class="modal fade" id="divDetail" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true"> </div>
+@section scripts
+{
+    <script src="~/Scripts/Customer/Customer.js"></script>
+}
