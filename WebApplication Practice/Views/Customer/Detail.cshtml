@@ -117,13 +117,13 @@
             <div class="">
                 @if (Model == null)
                 {
-                    <input type="submit" value="Create" class="btn btn-info" />
+                    <button id="btnAdd" type="button" value="Create" class="btn btn-info">新增</button>
                 }
                 else
                 {
-                    <input type="submit" value="Save" class="btn btn-info" />
-                    <input type="button" value="Delete" class="btn btn-info" />}
-                <input type="button" value="Cancel" class="btn btn-dark" />
+                    <button id="btnSave" type="button" value="Save" class="btn btn-info">儲存修改</button>
+                    <button id="btnDelete" type="button" value="Delete" class="btn btn-info">刪除</button>}
+                <button type="button" value="Cancel" class="btn btn-dark">取消</button>
             </div>
         </div>
     </div>
