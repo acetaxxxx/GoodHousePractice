@@ -1,3 +1,2 @@
-﻿function loadDivByID(url: string, data: object, id: string, func: () => )
-{
+﻿function loadDivByID(url: string, data: object, id: string, func: () => void) {
 }
